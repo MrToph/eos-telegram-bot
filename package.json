@@ -1,0 +1,28 @@
+{
+   "name": "telegram-bot",
+   "version": "1.1.1",
+   "description": "Telegram bot for Vigor",
+   "dependencies": {
+      "@dfuse/client": "^0.3.10",
+      "@types/node": "^8.10.56",
+      "body-parser": "^1.18.1",
+      "date-fns": "^2.6.0",
+      "dotenv": "^8.2.0",
+      "express": "^4.15.4",
+      "node-fetch": "^2.6.0",
+      "nodemon": "^1.19.4",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.0.3",
+      "telegraf": "^3.33.2",
+      "ts-node": "^3.3.0",
+      "typeorm": "0.2.20",
+      "typescript": "3.3.3333",
+      "winston": "^3.2.1",
+      "ws": "^7.2.0"
+   },
+   "scripts": {
+      "start-dev": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
+      "start": "ts-node src/index.ts",
+      "build": "tsc"
+   }
+}
